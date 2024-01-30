@@ -36,6 +36,9 @@ namespace TheStateMachine
             this.btn_unplug = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_myState = new System.Windows.Forms.Label();
+            this.picbx_state = new System.Windows.Forms.PictureBox();
+            this.webbrwser_about = new System.Windows.Forms.WebBrowser();
+            ((System.ComponentModel.ISupportInitialize)(this.picbx_state)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_plugIn
@@ -81,7 +84,7 @@ namespace TheStateMachine
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(272, 61);
+            this.label1.Location = new System.Drawing.Point(318, 516);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 4;
@@ -90,17 +93,36 @@ namespace TheStateMachine
             // lbl_myState
             // 
             this.lbl_myState.AutoSize = true;
-            this.lbl_myState.Location = new System.Drawing.Point(343, 61);
+            this.lbl_myState.Location = new System.Drawing.Point(389, 516);
             this.lbl_myState.Name = "lbl_myState";
             this.lbl_myState.Size = new System.Drawing.Size(25, 20);
             this.lbl_myState.TabIndex = 5;
             this.lbl_myState.Text = "....";
             // 
+            // picbx_state
+            // 
+            this.picbx_state.Location = new System.Drawing.Point(30, 25);
+            this.picbx_state.Name = "picbx_state";
+            this.picbx_state.Size = new System.Drawing.Size(700, 468);
+            this.picbx_state.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbx_state.TabIndex = 6;
+            this.picbx_state.TabStop = false;
+            // 
+            // webbrwser_about
+            // 
+            this.webbrwser_about.Location = new System.Drawing.Point(769, 29);
+            this.webbrwser_about.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webbrwser_about.Name = "webbrwser_about";
+            this.webbrwser_about.Size = new System.Drawing.Size(653, 589);
+            this.webbrwser_about.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 652);
+            this.ClientSize = new System.Drawing.Size(1439, 652);
+            this.Controls.Add(this.webbrwser_about);
+            this.Controls.Add(this.picbx_state);
             this.Controls.Add(this.lbl_myState);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_unplug);
@@ -112,6 +134,7 @@ namespace TheStateMachine
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The State Machine";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picbx_state)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,6 +148,8 @@ namespace TheStateMachine
         private System.Windows.Forms.Button btn_unplug;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_myState;
+        private System.Windows.Forms.PictureBox picbx_state;
+        private System.Windows.Forms.WebBrowser webbrwser_about;
     }
 }
 
