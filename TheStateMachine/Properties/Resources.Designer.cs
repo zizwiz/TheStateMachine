@@ -61,11 +61,21 @@ namespace TheStateMachine.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] explanation {
+            get {
+                object obj = ResourceManager.GetObject("explanation", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap off_plugged {
+        internal static System.Drawing.Bitmap On {
             get {
-                object obj = ResourceManager.GetObject("off_plugged", resourceCulture);
+                object obj = ResourceManager.GetObject("On", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +83,9 @@ namespace TheStateMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap off_unplugged {
+        internal static System.Drawing.Bitmap Standby {
             get {
-                object obj = ResourceManager.GetObject("off_unplugged", resourceCulture);
+                object obj = ResourceManager.GetObject("Standby", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +93,9 @@ namespace TheStateMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap on_plugged {
+        internal static System.Drawing.Bitmap SwitchOn {
             get {
-                object obj = ResourceManager.GetObject("on_plugged", resourceCulture);
+                object obj = ResourceManager.GetObject("SwitchOn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,9 @@ namespace TheStateMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap on_unplugged {
+        internal static System.Drawing.Bitmap Unplugged {
             get {
-                object obj = ResourceManager.GetObject("on_unplugged", resourceCulture);
+                object obj = ResourceManager.GetObject("Unplugged", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

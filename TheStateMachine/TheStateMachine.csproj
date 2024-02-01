@@ -58,6 +58,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\MsgBox.cs" />
+    <Compile Include="utils\Win32.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,6 +73,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="explanation.mht" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -86,10 +89,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gears.ico" />
-    <Content Include="graphics\off_plugged.jpg" />
-    <Content Include="graphics\off_unplugged.jpg" />
-    <Content Include="graphics\on_plugged.jpg" />
-    <Content Include="graphics\on_unplugged.jpg" />
+    <Content Include="graphics\On.jpg" />
+    <Content Include="graphics\Standby.jpg" />
+    <Content Include="graphics\SwitchOn.jpg" />
+    <Content Include="graphics\Unplugged.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
