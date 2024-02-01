@@ -80,26 +80,25 @@ namespace TheStateMachine
                 MessageBoxIcon.Information);
         }
 
-        private void webbrwser_explain_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-            // webbrwser_explain.Size = new Size(webbrwser_explain.Document.Body.ScrollRectangle.Width, 659);
+        //private void webbrwser_explain_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        //{
 
-            if (IsHorizontalScrollbarPresent)
-            {
-                // webbrwser_explain.Size = new Size(webbrwser_explain.Document.Body.ScrollRectangle.Width, webbrwser_explain.Document.Body.ScrollRectangle.Height);
-                //ActiveForm.Size = new Size(webbrwser_explain.Document.Body.ScrollRectangle.Width, webbrwser_explain.Document.Body.ScrollRectangle.Height);
-            }
-        }
+        //    if (IsHorizontalScrollbarPresent)
+        //    {
+        //        webbrwser_explain.Size = new Size(webbrwser_explain.Document.Body.ScrollRectangle.Width, webbrwser_explain.Document.Body.ScrollRectangle.Height);
+        //        ActiveForm.Size = new Size(webbrwser_explain.Document.Body.ScrollRectangle.Width, webbrwser_explain.Document.Body.ScrollRectangle.Height);
+        //    }
+        //}
 
-        public bool IsHorizontalScrollbarPresent
-        {
-            get
-            {
-                var widthofScrollableArea = webbrwser_explain.Document.Body.ScrollRectangle.Width;
-                var widthofControl = webbrwser_explain.Document.Window.Size.Width;
+        //public bool IsHorizontalScrollbarPresent
+        //{
+        //    get
+        //    {
+        //        var widthofScrollableArea = webbrwser_explain.Document.Body.ScrollRectangle.Width;
+        //        var widthofControl = webbrwser_explain.Document.Window.Size.Width;
 
-               return widthofScrollableArea > widthofControl;
-            }
-        }
+        //        return widthofScrollableArea > widthofControl;
+        //    }
+        //}
     }
 }
