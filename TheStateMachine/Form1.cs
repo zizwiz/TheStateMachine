@@ -24,6 +24,8 @@ namespace TheStateMachine
 
             doProcessEvents(FiniteStateMachine.Events.Unplug);
 
+            if (File.Exists("explanation.mht")) File.Delete("explanation.mht");
+            File.WriteAllBytes("explanation.mht", Resources.explanation);
             webbrwser_explain.Navigate(new Uri(String.Format("file:///{0}", Path.GetFullPath("explanation.mht"))));
         }
 
@@ -78,6 +80,11 @@ namespace TheStateMachine
         {
             MsgBox.Show("Build with Jetbrains Rider\rhttps://www.jetbrains.com/rider/", "About", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (File.Exists("explanation.mht")) File.Delete("explanation.mht");
         }
 
         //private void webbrwser_explain_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)

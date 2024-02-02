@@ -355,6 +355,7 @@ namespace TheStateMachine
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The State Machine";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picbx_state)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
